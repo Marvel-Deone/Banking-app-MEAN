@@ -6,15 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidemenu.component.css']
 })
 export class SidemenuComponent implements OnInit {
-  status = false;
+  hidden = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  // toggleBadgeVisibility() {
-  //   this.hidden = !this.hidden;
-  // }
+  toggleBadgeVisibility() {
+    this.hidden = !this.hidden;
+  }
 
 }
