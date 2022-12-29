@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header-menu',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderMenuComponent implements OnInit {
   status = false;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -16,5 +17,9 @@ export class HeaderMenuComponent implements OnInit {
   showSideMenu () {
     this.status =!this.status
   }
+  myNotification() {
+    this.router.navigate(['/user/notification']);
+  }
+
 
 }

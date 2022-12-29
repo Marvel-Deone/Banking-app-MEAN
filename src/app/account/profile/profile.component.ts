@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
   displayTitle: any = 'update_profile';
+  imgname?:any;
   constructor() { }
 
   ngOnInit(): void {
@@ -14,6 +15,17 @@ export class ProfileComponent implements OnInit {
 
   changeDisplay(title: any) {
     this.displayTitle = title;
+  }
+  loadImage(event:any){
+    if (event.target.files.length > 0) {
+        const files = event.target.files[0];
+      this.imgname = files.name;
+      const reader = new FileReader();
+      console.log(event.target.files);
+    }else {
+      console.log('Waiting');
+      
+    }
   }
 
 }
