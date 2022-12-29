@@ -1,8 +1,9 @@
 <div class="flex flex-col gap-6 w-full">
     <app-header-menu></app-header-menu>
-    <main class="flex flex-col gap-2 h-full overflow-y-auto md:px-6 py-16 md:px-5 md:py-20 w-full">
+    <main
+        class="flex flex-col gap-2 h-full overflow-y-auto md:px-6 py-16 md:px-5 md:py-20 w-full w-full lg:w-[68.2rem]">
         <div class='container px-4 md:px-6 py-8 mx-auto grid'>
-            <h2 class="text-2xl font-semibold text-gray-700 mb-4 dark:text-gray-200">Profile</h2>
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Profile</h2>
             <!-- Account Informstion -->
             <div *ngIf="displayTitle=='account_information'">
                 <div class=' flex flex-col lg:flex-row gap-3 lg:gap-5 mb-5'>
@@ -121,7 +122,7 @@
                             src="https://pbs.twimg.com/profile_images/1551272248903966721/YXNtcsNT_400x400.jpg" alt=""
                             aria-hidden="true" />
                         <div>
-                            <h2 class='dark:text-white font-semibold text-sm text-gray-500 dark:text-ray-200'>Folajimi
+                            <h2 class='font-semibold text-sm text-gray-500 '>Folajimi
                             </h2>
                             <div class='flex gap-4 mt-2 mb-3'>
                                 <div
@@ -136,7 +137,7 @@
                             <div class='lg:w-6/12 flex flex-col gap-3 mb-5'>
                                 <div class='flex gap-1 items-center'>
                                     <img src="assets/images/user.png" class="w-4 h-fit" alt="" />
-                                    <h3 class='dark:text-gray-200 font-semibold'>Person Information</h3>
+                                    <h3 class='font-semibold'>Person Information</h3>
                                 </div>
                                 <div>
                                     <label class="text-gray-700 text-sm font-semibold">Username</label>
@@ -225,7 +226,7 @@
                             <div class='lg:w-6/12 flex flex-col gap-3'>
                                 <div class='flex gap-2 items-center'>
                                     <img src="assets/images/connection-to-account.png" class="w-5 h-fit" alt="" />
-                                    <h3 class='dark:text-gray-200 font-semibold'>Next Of Kin Information</h3>
+                                    <h3 class='font-semibold'>Next Of Kin Information</h3>
                                 </div>
                                 <div>
                                     <label class="text-gray-700 text-sm font-semibold"> Next Of Kin Name</label>
