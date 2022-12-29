@@ -1,1 +1,45 @@
-<p>help works!</p>
+<div class="flex flex-col gap-6 w-full">
+    <app-header-menu></app-header-menu>
+    <div class="h-full overflow-y-auto md:px-6 py-16 md:px-5 md:py-20 w-full lg:w-[68.2rem]">
+        <h2 class="text-2xl font-semibold text-gray-700 dark:text-gray-200 text-center p-4">We're Here to Help You!
+        </h2>
+        <div class='w-full lg:w-7/12 px-8 lg:px-20 mx-auto flex flex-col gap-6'>
+            <div class='flex flex-col gap-2'>
+                <label class="text-gray-700 text-sm font-semibold dark:text-gray-300"> Hi! How can we help?</label>
+                <input type="text"
+                    class='block w-full mt-1 text-sm border px-3 py-3 rounded border-blue-200 focus:border-blue-400 focus:outline-none focus:shadow-outline-blue text-gray-500'
+                    placeholder='How can we help?' />
+            </div>
+            <div class='flex flex-col gap-2'>
+                <label class="text-gray-700 text-sm font-semibold dark:text-gray-300"> Which section isn't
+                    working?</label>
+                <select name="" id=""
+                    class='block w-full mt-1 text-sm border px-3 py-3 rounded border-blue-200 focus:border-blue-400 focus:outline-none focus:shadow-outline-blue text-gray-500'>
+                    <option value="">Transaction</option>
+                    <option value="">Deposit</option>
+                    <option value="">Insights</option>
+                    <option value="">Wallet</option>
+                    <option value="">Account</option>
+                </select>
+            </div>
+            <div class='flex flex-col gap-2'>
+                <label class="text-gray-700 text-sm font-semibold dark:text-gray-300"> Please describe your issue so
+                    we can help you more quickly.</label>
+                <input type="text"
+                    class='block w-full mt-1 text-sm border px-3 py-3 rounded border-blue-200 focus:border-blue-400 focus:outline-none focus:shadow-outline-blue text-gray-500'
+                    placeholder='Please describe your issue' />
+            </div>
+            <div class='flex flex-col gap-2'>
+                <label class="text-gray-700 text-sm font-semibold dark:text-gray-300"> Pls Include a screenshot(or
+                    video) of the issue if applicable.</label>
+                <input type="text"
+                    class='block w-full mt-1 text-sm border px-3 py-3 rounded border-blue-200 focus:border-blue-400 focus:outline-none focus:shadow-outline-blue text-gray-500'
+                    placeholder='A decription of the screenshot (or video)' />
+            </div>
+            <button type='submit'
+                class="block w-full px-4 py-3 mt-4 text-base font-medium leading-5 text-center text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg active:bg-blue-600 hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue">
+                Send Email
+            </button>
+        </div>
+    </div>
+</div>

@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./account.component.css']
 })
 export class AccountComponent implements OnInit {
-
+  status: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  setStatus() {
+    this.status = !this.status;
   }
 
 }
